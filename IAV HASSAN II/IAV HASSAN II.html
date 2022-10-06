@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+        <title>IAV-Hassan2</title>
+        <meta name="description" content="Une plateforme sur l'avenir de l'iav..." />
+        <meta name="keywords" content="iav, institut agronomique et veterinaire hassan 2, topographie, veterinaire, IAA, Genie rural, Agronomie" />
+        <link rel="stylsheet" href="css/style.css" />
+        <link rel="icon" href="images/empty_cover.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
+        <link href="https://p7.hiclipart.com/preview/467/727/791/google-maps-road-map-icon-paper-maps-and-map-pointer-thumbnail.jpg" rel="stylesheet" />
+        <link href="fa-solid fa-circle-check" rel="stylesheet" />
+        <link href="fa-solid fa-sliders-up" rel="stylesheet" />
+<style>
+:root {
+    --primarycolor: #00FF00;
+    --secondarycolor: red;
+    --lightColor: #000;
+    --bgColor-1: rgb(249, 247, 247);
+    --bgColor-2: hwb(0 98% 2%);
+    --padding: 8%;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondarycolor);
+    margin-bottom: 3.5rem;
+}
+
+h4 {
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+span {
+    color: var(--primarycolor);
+}
+
+p {
+    color: var(--secondarycolor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+nav {
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: var(--primarycolor);
+}
+
+.btn {
+    background-color: var(--primarycolor);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--primarycolor);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-texts {
+    color: var(--lightColor);
+    position: relative;
+    bottom: 70px;
+}
+
+.social img {
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.home.container-images {
+    width: 45%;
+    height: 90%;
+    position: relative;
+    background-color: green;
+}
+
+.home.container-images img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    transition: bottom 1s, left 1s;
+}
+
+.home.container-images:hover .shape{
+    bottom: 40px;
+}
+
+.home.container-images:hover .pic{
+    left: 45%;
+}
+
+.about {
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about.container-images {
+    width: 35%;
+}
+
+.about.container-images img {
+    width: 90%;
+}
+
+.about.container-texts {
+    width: 35%;
+}
+
+.services {
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--padding);
+}
+
+.text-center{
+    text-align: center;
+    color: var(--lightColor);
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 300px;
+    background-color: var(--bgColor-1);
+    border-radius: 20px;
+    padding: 2.3rem 2rem;
+    text-align: center;
+}
+
+.card em {
+    font-size: 1.12rem;
+    text-align: center;
+    color: var(--lightColor);
+    margin: 2rem;
+}
+</style>
+</head>
+<body>
+
+<section class="home" id="home">
+            <nav>
+                <h1><span>IAV</span>HassanII</h1>
+                <u1>
+                    <li><a href="#home">About Us</a></li>
+                    <li><a href="#home">Espace Etudiant</a></li>
+                    <li><a href="#home">Activities</a></li>
+                    <li><a href="#home">Contact me</a></li>
+                </u1>
+                
+                <a href="#" class="btn">S'inscrir</a>
+            </nav>
+            <div class="content">
+                <div class="container-texts">
+                    <h2>Bienvenu</h2>
+                    <h3>sur la plateforme de <span>l'IAV Hassan 2</span></h3>
+                    <a href="file:///C:/Users/HP/Desktop/web%20mapping/MY%20CV/index.html" class="btn">Download CV</a>
+
+                    <div class="social">
+                        <a href="https://fr-fr.facebook.com/IAV.HASSANII.IAV/" target="_blank"><img scr="images/facebook.png" alt="" /> </a>
+                        <a href="https://ma.linkedin.com/in/institut-agronomique-et-v%C3%A9t%C3%A9rinaire-hassan-ii-995373109" target="_blank"><img scr="images/linkedin.png" alt="" /> </a>
+                    </div>
+                </div>
+                <div class="container-images">
+                    <img src="images/ouverture_s.jpg" alt="" class="logo">
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container-imgs">
+                <img scr="images/saloniav2022" alt="" />
+            </div>
+            <div class="container-texts">
+                <h1>About<span>Us</span></h1>
+                <h5><span>EL KALAI</span>Imane</h5>
+                <p>
+                    Je suis etudiante en 5eme annee de la filiere des sciences geomatiques et ingenierie topographique a l'IAV.
+                </p>
+            </div>
+        </section>
+        <section class="services">
+            <h1 class="text-center"><span>Our</span>services</h1>
+            <div class="box">
+                <div class="card">
+                    <em class="https://p7.hiclipart.com/preview/467/727/791/google-maps-road-map-icon-paper-maps-and-map-pointer-thumbnail.jpg"></em>
+                    <h5>Formations-cycle-preparatoire</h5>
+                    <div class="par">
+                        <p>
+                            Le cycle préparatoire intégré dure deux années avec des objectifs de préparer les étudiants à l’entrée en cycles d’ingénieurs et vétérinaire. Les cursus assurent la formation fondamentale des étudiants et contribuent à leur culture générale grâce à une formation équilibrée dans les différents champs disciplinaires.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <em class="fa-solid fa-circle-check"></em>
+                    <h5>SCIENCES GÉOMATIQUES ET INGÉNIERIE TOPOGRAPHIQUE</h5>
+                    <div class="par">
+                        <p>
+                            La Filière de formation en Sciences Géomatiques et Ingénierie Topographique a pour principales missions de former le futur ingénieur topographe et de le préparer à l’exercice de sa profession dans divers domaines. Ces domaines intègrent entre autre l’équipement des espaces en infrastructure géodésique, l’établissement des cartes, le cadastre et l’expertise foncière, la collecte, le traitement et la représentation de l’information spatiale pour les besoins de la gestion des ressources et de l’aménagement du territoire et des espaces urbains et ruraux. La formation contribue aussi au développement de la recherche scientifique en réponse aux besoins des différents secteurs des sciences Géomatiques et d’ingénierie topographique
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <em class="fa-solid fa-circle-chec"><em>
+                    <h5>Cooperation International</h5>
+                    <div class="par">
+                        <p>
+                            La coopération internationale est considérée comme étant un levier de base ancré dans les missions de l’IAV Hassan II qui, au fil de plusieurs décennies, a tissé de nombreux liens de coopération avec des partenaires issus des quatre coins du monde.Ayant pour principale finalité de participer à la promotion du tissu économique, social et sociétal à l’échelle mondiale, via des actions de Formation, d’Expertise et de Recherche-Développement-Innovation (RDI), l’IAV Hassan II perçoit sa coopération internationale à travers 3 perspectives majeures ; à savoir : La Coopération Bilatérale, la Coopération UE et la Coopération Sud-Sud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>© 2022 All Rights Reserved. <a href="https://goo.gl/maps/V9phdHCWDGyG5Wef8"> Localisation</a></p>
+          </footer>
+</body>
+</html>
